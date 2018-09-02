@@ -1,0 +1,100 @@
+// Page header styles
+
+@import "variables";
+
+
+#header-row {
+  margin-top: 3.333rem;
+  background-color: $grey;
+  z-index: 1;
+
+  @media only screen and (min-width: 992px) {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7882352941);
+  }
+}
+
+
+// Header logo style
+#logo-container {
+  img {
+    height: 6.167rem;
+
+    @media only screen and (min-width: 992px) {
+      padding-right: 4.167rem;
+      border-right-color: $penn-red-op;
+      border-right-style: solid;
+      border-width: 0.1667rem;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+
+// Candidate name style
+#cand-name-container {
+  font-weight: bold;
+  color: $penn-blue;
+
+  @media only screen and (min-width: 992px) {
+    padding: 4.167rem !important;
+  }
+
+  a {
+    font-family: $title-font;
+
+    &:hover {
+      color: $penn-red;
+    }
+  }
+}
+
+
+// Search bar style
+#search-bar-container {
+  #search-bar {
+    width: 20.83rem;
+    background-color: $white;
+    color: $penn-blue;
+
+    @media only screen and (min-width: 992px) {
+      width: 16.67rem;
+    }
+
+    input {
+      width: 13.58rem;
+      border: none;
+      outline: none;
+      vertical-align: middle;
+      color: $penn-blue;
+
+      @media only screen and (min-width: 992px) {
+        width: 9.5rem;
+      }
+
+      &::placeholder {
+        font-style: italic;
+        color: $penn-blue;
+      }
+    }
+
+    .fa-search {
+      border-right-style: solid;
+      border-right-width: 0.08333rem;
+      font-size: 1.333rem;
+      vertical-align: middle;
+    }
+
+    #search-submit {
+      border: none;
+      background: none;
+      vertical-align: middle;
+      font-size: 1.5rem;
+      color: $penn-red;
+      cursor: pointer;
+    }
+  }
+}

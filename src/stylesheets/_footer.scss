@@ -1,0 +1,18 @@
+// Page footer styles
+
+@import "variables";
+
+
+#footer-row {
+  background-color: #185766;
+  color: $white;
+
+  a {
+    font-weight: bold;
+    color: $orange;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}

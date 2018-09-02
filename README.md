@@ -1,0 +1,13 @@
+# UPHS Candidate Submission
+![UPHS Candidate Submission](uphs.png)
+
+This repository is a webpage created for the University of Pennsylvania Health System (UPHS) web developer job application, which consisted of creating a fully functioning static webpage based on screenshots and a series of requirements. To create this webpage, I first assessed the submission requirements and decided to use [Bootstrap](https://getbootstrap.com/) to assist with responsive design given the time constraint. I then planned the HTML structure of the webpage by dividing the horizontal sections of the requirements screenshot into rows and their subsections into columns, assigning consistent identifiers to rows (e.g., "travel-row") and columns (e.g., "travel-container") for ease of CSS styling and readability. I noted commonalities between title styles, link styles, and icon styles to implement further CSS classes, leveraging [Sass](https://sass-lang.com/) to assign variables to common font styles, font sizes, and colors. I then added content to each row and its columns, working sequentially through the screenshot and following mobile-first design to ensure usability across devices. I implemented a large, expandable menu navigator with clickable subsections for mobile use, assigning the navigator to a smaller, expanded style with hoverable subsections (based on the screenshot requirements) for desktop-sized screens. I modified Bootstrap's carousel component to implement a rotating banner of images and their descriptions, with each rotation fading in and out slowly and smoothly for the user to intake the content. I also added the ability to swipe between images in the carousel for touchscreen devices. I tested the finished product on multiple browsers and devices using [BrowserStack](https://www.browserstack.com) to ensure consistency and usability, as well as ran my HTML and CSS through validators (https://validator.w3.org/ and http://jigsaw.w3.org/css-validator/ respectively) to ensure the code is standards-compliant.
+
+## Setup
+1. Clone this repository locally or on your server (`git clone https://github.com/estherh5/uphs-submission`).
+2. Go to the project root directory, and install the required dependencies by running `npm install`.
+3. Compile the required stylesheets and scripts by running `npm run build`. The production-ready files will be located in the dist/ folder.
+
+
+## Copyright
+This repository is not licensed for copy or reuse, as it contains copyrighted materials (e.g., the Perelman School of Medicine logo). It is hosted here only for the UPHS web development team to review.

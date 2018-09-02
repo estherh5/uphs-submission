@@ -1,0 +1,84 @@
+// General styles applicable to all webpages
+
+@import "variables";
+
+
+// Base font size that rem is based off of
+html {
+  font-size: 12px;
+}
+
+
+body {
+  font-family: $body-font;
+  letter-spacing: 0.04rem;
+}
+
+
+a, a img, a:hover, a img:hover {
+  font-family: $body-font;
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+
+// Image container style to prevent images from spilling over
+.img-container {
+  overflow: hidden;
+}
+
+
+.section-title {
+  font-family: $title-font;
+  font-style: italic;
+  font-weight: bold;
+  color: $penn-blue;
+}
+
+
+// <icon> | <title> style
+.icon-title {
+  font-size: 1.25rem;
+  color: $penn-blue;
+
+  td {
+    padding-top: 0.25rem;
+    padding-bottom: 0.4167rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $penn-blue;
+    }
+  }
+
+  &.section-header {
+    font-size: 1.5rem;
+
+    @media only screen and (min-width: 576px) {
+      font-size: 1.75rem;
+    }
+  }
+}
+
+
+// More information/opportunities/etc. link style
+.more-link {
+  color: $penn-red !important;
+
+  &:hover {
+    color: $penn-blue-op !important;
+  }
+}
+
+
+// Align FontAwesome icons in their containers
+.icon-cell {
+  text-align: center;
+}

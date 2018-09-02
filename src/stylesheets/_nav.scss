@@ -1,0 +1,165 @@
+// Navigation menu styles
+
+@import "variables";
+
+
+#menu-row {
+  background-color: $penn-red;
+}
+
+
+// Mobible collapsible menu style
+.navbar-collapse {
+  max-height: 85vh;
+  overflow: auto;
+
+  @media only screen and (min-width: 992px) {
+    max-height: unset;
+    overflow: unset;
+  }
+}
+
+
+// Bars icon that opens/closes menu on mobile
+.navbar-toggler {
+  font-size: 1.667rem;
+  color: $white;
+  text-align: left;
+}
+
+
+// General menu option style
+.nav-item {
+  display: inline-block;
+  list-style-type: none;
+
+  &.show {
+    background-color: $teal;
+
+    @media only screen and (min-width: 992px) {
+      background-color: inherit;
+    }
+  }
+
+  &:hover {
+    background-color: $teal;
+  }
+}
+
+
+// Menu option name style
+.nav-link {
+  font-size: $mobile-size;
+  font-weight: bold;
+  color: $white;
+
+  @media only screen and (min-width: 992px) {
+    font-size: 1.1rem;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 1.2rem;
+  }
+
+  &:hover {
+    color: $white;
+  }
+}
+
+
+// Home icon style on desktop
+.fa-home {
+  font-size: 1.333rem;
+  color: $orange;
+}
+
+
+// Menu option that contains dropdown menu of links style
+.nav-link-container {
+  &:hover {
+    &:before {
+      @media only screen and (min-width: 992px) {
+        position: absolute;
+        height: 0rem;
+        width: 0rem;
+        top: 100%;
+        left: 40%;
+        border-top: 0.6667rem solid $teal;
+        border-right: 0.6667rem solid transparent;
+        border-left: 0.6667rem solid transparent;
+        display: block;
+        content: '';
+      }
+    }
+
+    .dropdown-menu {
+      @media only screen and (min-width: 992px) {
+        display: block !important;
+      }
+    }
+  }
+}
+
+
+// Hide dropdown arrow on desktop
+.dropdown-toggle {
+  &:after {
+    @media only screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+}
+
+
+
+// Dropdown menu style
+.dropdown-menu {
+  position: absolute !important;
+  width: 100%;
+  padding: 0rem;
+  border: none;
+  margin-top: 0rem;
+  background-color: $teal;
+  display: none;
+
+  @media only screen and (min-width: 992px) {
+    width: 14.58rem;
+    top: unset !important;
+    left: 50% !important;
+    right: auto;
+    border-radius: 0rem;
+    padding-top: 0.7rem;
+    background-color: $transparent;
+    transform: translate(-50%, 0) !important;
+  }
+
+  &.show {
+    position: static !important;
+    display: block !important;
+    transform: translate3d(0rem, 0rem, 0rem) !important;
+
+    @media only screen and (min-width: 992px) {
+      position: absolute !important;
+      top: unset !important;
+      left: 50% !important;
+      display: none !important;
+      transform: translate(-50%, 0%) !important;
+    }
+  }
+}
+
+
+// Dropdown item style
+.dropdown-item {
+  color: $white;
+  white-space: normal;
+
+  @media only screen and (min-width: 992px) {
+    background-color: $teal-op;
+  }
+
+  &:hover, &:focus {
+    background-color: $lt-blue;
+    color: $white;
+  }
+}

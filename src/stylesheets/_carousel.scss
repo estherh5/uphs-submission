@@ -1,0 +1,113 @@
+// Banner image carousel styles
+
+@import "variables";
+
+
+// General carousel item style
+.carousel-fade .carousel-item {
+  transition-duration: 1s;
+
+  img {
+    @media only screen and (min-width: 1200px) {
+      margin-top: -8.333rem;
+      margin-bottom: -16.67rem;
+    }
+  }
+
+  .active {
+    transition: opacity 1s ease;
+
+    &.left, &.right {
+      transition: opacity 1s ease;
+    }
+  }
+}
+
+
+
+// Carousel image caption and description style
+.banner-desc {
+  position: relative;
+  padding-top: 2.5rem;
+  padding-bottom: 5.667rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  background-color: $grey;
+  font-size: $mobile-size;
+  line-height: 2;
+  text-align: center;
+
+  @media only screen and (min-width: 576px) {
+    padding-left: 4.167rem;
+    padding-right: 4.167rem;
+  }
+
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 5rem;
+    padding-left: 8.333rem;
+    padding-right: 8.333rem;
+  }
+
+  @media only screen and (min-width: 992px) {
+    padding-top: 1.667rem;
+    padding-bottom: 4.5rem;
+    padding-left: 16.67rem;
+    padding-right: 16.67rem;
+    font-size: $desktop-size;
+  }
+
+  .caption {
+    position: absolute;
+    top: -5rem;
+    background-color: $penn-blue-op;
+    font-family: $title-font;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    color: $orange;
+
+    @media only screen and (min-width: 576px) {
+      top: -5.833rem;
+      font-size: 2rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+      top: -6.667rem;
+      font-size: 2rem;
+    }
+  }
+
+  p {
+    font-style: italic;
+  }
+}
+
+
+// Carousel indicators (that show toggled item) style
+.carousel-indicators {
+  bottom: 0rem;
+
+  li {
+    height: 1.667rem;
+    width: 1.667rem;
+    border-radius: 0.8333rem;
+    background-color: $penn-blue;
+    transition: 0.5s;
+
+    @media only screen and (min-width: 992px) {
+      height: 1.083rem;
+      width: 1.083rem;
+      border-radius: 0.5833rem;
+    }
+
+    &:hover {
+      background-color: $white;
+      transition: 0.5s;
+    }
+
+    &.active {
+      background-color: $lt-blue;
+      transition: 0.5s;
+    }
+  }
+}

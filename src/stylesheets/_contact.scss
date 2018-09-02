@@ -1,0 +1,105 @@
+// Contact Us, Quick Links & Follow Us styles
+
+@import "variables";
+
+
+#contact-row {
+  background-color: $lt-blue;
+}
+
+
+// Floating contact information box style
+#contact-box {
+  position: absolute;
+  margin-left: 4.167rem;
+  background-color: $penn-blue-op;
+  z-index: 1;
+
+  @media only screen and (min-width: 1200px) {
+    width: 46%;
+  }
+
+  .section-title {
+    color: $orange;
+  }
+
+  #address {
+    font-size: $mobile-size;
+    color: $white;
+  }
+
+  .icon-title {
+    color: $lt-blue;
+
+    a {
+      &:hover {
+        color: $lt-blue;
+      }
+    }
+  }
+}
+
+
+// Contact information map style
+#contact-map-container {
+  img {
+    margin-top: -21.17rem;
+    margin-bottom: -22.42rem;
+    margin-left: -9.167rem;
+    transform: scale(1.2);
+
+    @media only screen and (min-width: 768px) {
+      margin-left: 0rem;
+    }
+
+    @media only screen and (min-width: 992px) {
+      margin-bottom: -20.92rem;
+      margin-left: -11.5rem;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      margin-left: -7.5rem;
+    }
+  }
+}
+
+
+// Quick Links section style
+#quick-links-container {
+  .section-title {
+    margin-bottom: 2.5rem;
+  }
+
+  td {
+    padding-bottom: 1.667rem;
+  }
+}
+
+
+// Follow Us section style
+#follow-us-container {
+  .section-title {
+    margin-bottom: 2.5rem;
+  }
+
+  #social-links-container {
+    font-size: 5.417rem;
+    line-height: 1;
+
+    @media only screen and (min-width: 992px) {
+      font-size: 4.167rem;
+    }
+
+    a {
+      display: inline-grid;
+
+      @media only screen and (min-width: 992px) {
+        margin-bottom: 2rem !important;
+      }
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}

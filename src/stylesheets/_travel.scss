@@ -1,0 +1,53 @@
+// Travel Information & Funding Opportunities styles
+
+@import "variables";
+
+
+#travel-row {
+  background-color: $grey;
+
+  ul {
+    max-height: 41.67rem;
+
+    @media only screen and (min-width: 576px) {
+      max-height: 18.33rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+      max-height: 24.17rem;
+    }
+
+    @media only screen and (min-width: 992px) {
+      max-height: 16.4rem;
+    }
+  }
+
+  li {
+    font-size: $mobile-size;
+    letter-spacing: initial;
+
+    @media only screen and (min-width: 576px) {
+      width: 45%;
+    }
+
+    @media only screen and (min-width: 992px) {
+      font-size: $desktop-size;
+    }
+  }
+
+  a {
+    color: $lt-red;
+
+    &:hover {
+      color: $penn-red;
+    }
+  }
+}
+
+
+// Plane icon style
+#travel-container {
+  .fa-plane {
+    transform: rotateZ(315deg);
+  }
+}

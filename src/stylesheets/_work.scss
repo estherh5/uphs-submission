@@ -1,0 +1,77 @@
+// Where We Work & Upcoming Events styles
+
+@import "variables";
+
+
+#work-row {
+  background-color: $white;
+}
+
+
+// Where We Work map style
+#work-map-container {
+  img {
+    width: 100%;
+    margin-top: -3.333rem;
+    margin-bottom: -3.333rem;
+    margin-left: -0.4167rem;
+    transform: scale(1.1);
+
+    @media only screen and (min-width: 576px) {
+      margin-top: -4.583rem;
+      margin-bottom: -5rem;
+    }
+
+    @media only screen and (min-width: 768px) {
+      margin-top: -6.25rem;
+      margin-bottom: -6.667rem;
+    }
+
+    @media only screen and (min-width: 992px) {
+      margin-top: -5rem;
+      margin-bottom: -5rem;
+    }
+
+    @media only screen and (min-width: 1200px) {
+      margin-top: -6.25rem;
+    }
+  }
+}
+
+
+// Upcoming Events section style
+#events-container {
+  #events-inner-container {
+    background-color: $lt-blue;
+
+    @media only screen and (min-width: 992px) {
+      max-width: 29.17rem;
+    }
+  }
+
+  #events-table {
+    td {
+      vertical-align: baseline;
+    }
+  }
+
+  .event-date {
+    font-size: $mobile-size + 0.1667rem;
+    font-weight: bold;
+    color: $orange;
+    text-align: right;
+
+    @media only screen and (min-width: 992px) {
+      font-size: $desktop-size + 0.1667rem;
+    }
+  }
+
+  .event-name {
+    font-size: $mobile-size;
+    color: $white;
+
+    @media only screen and (min-width: 992px) {
+      font-size: $desktop-size;
+    }
+  }
+}
